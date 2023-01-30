@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="HTML 5, CSS 3,Javascript, JQuery, AngularJs">
+        <meta name="description" content="Dynamic Web Development">
+        <meta name="author" content="Maria-goretti">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <title>Front end</title>
+    
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+
+        <style>
+
+            h2{
+                background-color: green;
+            }
+        </style>
+
+    </head>
+    <body id="body">
+        <header>
+            Classier Goretti's Restaurant
+            
+            </header> 
+            <section>
+                <nav class="topnav">
+                    <ul>
+                        
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="order.html">Cart</a></li>
+                        <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+    
+    
+                    
+                    </ul>
+                 </nav>
+                 <article>
+            <h2>Select Address</h2>
+            <form>
+                <label for="city"><strong>City:</strong></label>
+                <input type="text" id="city" name="city">
+                <label><strong>Address:</strong></label>
+                <input type="text" id="address" name="address">
+            </form>
+            <h2>Payment Method</h2>
+            <form method="post" action="thankyou.html" target="_blank">
+            
+                <label for="select">SELECT PAYMENT METHOD</label><br>
+                <input type="radio" id="select" name="select">PAY WITH CARD<br>
+                <input type="radio" id="select" name="select">PAY WITH BANK TRANSFER<br>
+                <input type="radio" id="select" name="select">PAY CASH ON DELIVERY<br>
+                <!--Here user puts in method of pay, if card payment the user inputs details below-->
+
+                <label for="card">Enter Card Number</label>
+                <input type="number" id="card" name="card"><br>
+                <label for="Pin">Pin</label>
+                <input type="number" id="pin" name="pin"><br>
+                <input type="submit" id="submit" value="Check Out">
+            </form>
+                 </article>
+            </section>
+    </body>
+</html>

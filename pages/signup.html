@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="HTML 5, CSS 3,Javascript, JQuery, AngularJs">
+        <meta name="description" content="Dynamic Web Development">
+        <meta name="author" content="Maria-goretti">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <title>Front end</title>
+        
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <style>
+            span{
+                color: red;
+            }
+        </style>
+
+
+    </head>
+
+    <body>
+        <header>
+            Classier Goretti's Restaurant
+            </header>
+        <section>
+            <nav class="topnav">
+                <ul>
+                    
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="order.html">cart</a></li>
+                    <li><a href="about.html">About</a></li>
+
+                
+                </ul>
+             </nav>
+            <article> 
+        <h2>Sign Up to order for tasty meals !</h2>
+        <form method="post" name="signup" action="order.html" onsubmit="return validatesignup();" autocomplete="off">
+
+        <label for="firstname">FIRST NAME:</label><br>
+            <input id="firstname" type="text" ><span id="firstnameErr" onblur="return validatefirstname();"></span><br>
+            <label for="middlename"> OTHER NAME:</label><br>
+            <input id="middlename" type="text"><span id="middlenameErr"></span><br>
+            <label for="lastname">LAST NAME:</label><br>
+            <input id="lastname" type="text" ><span id="lastnameErr"></span><br>
+            <label for="email">EMAIL ADDRESS:</label><br>
+            <input type="email" id="email" name="email"><span id="emailErr"></span><br>
+            <label for="phone">PHONE NUMBER:</label><br>
+            <input type="tel" id="phone" name="phone"><span id="phoneErr"></span><br>
+            <label for="sex">SEX:</label>
+           <label for="male"> MALE</label>
+            <input id="male" type="radio" name="sex" value="male" ><span id="maleErr"></span>
+           <label for="female">FEMALE</label>
+           <input id="female" type="radio" name="sex" value="female"><span id="femaleErr"></span><br>
+           <label for="dob">DATE OF BIRTH:</label><br>
+           <input id="dob" type="date" ><span id="dobErr"></span><br>
+           <label for="password">PASSWORD:</label><br>
+           <input id="password" type="password" ><span id="passwordErr"></span><br>
+           <label for="confirmpassword">CONFIRM PASSWORD:</label><br>
+           <input id="confirmpassword" type="password" ><span id="confirmpasswordErr"></span>
+           <button type="submit">Sign Up</button>
+
+        </form>
+            </article>
+        </section>
+
+    </body>
+</html>
